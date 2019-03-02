@@ -46,7 +46,15 @@ ArrayList<Question> questionList = new ArrayList<Question>();
         CheckBox wadeCheckBox  = (CheckBox)findViewById(R.id.wade_checkbox); boolean wade = wadeCheckBox.isChecked();
 
         if (bryantCheckBox.isChecked() && sabanCheckBox.isChecked()&& !wadeCheckBox.isChecked()) { score += 1;
-
+                                                                                                  
+                                                                                                  
+        //Radio Button answers for third question//
+            RadioButton radioButton = (RadioButton) findViewById(R.id.radio_button2);
+            boolean isradioButton2Checked = radioButton.isChecked();
+            if (isradioButton2Checked )
+            {
+                score += 1;
+            }
 
         }
 
